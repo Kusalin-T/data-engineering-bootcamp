@@ -16,7 +16,7 @@ class MySpider(scrapy.Spider):
         print(header)
 
         table = response.css("#divDaily .pdtable")
-        # print(table)
+        print(table)
 
         rows = table.css("tr")
         # rows = table.xpath("//tr")
