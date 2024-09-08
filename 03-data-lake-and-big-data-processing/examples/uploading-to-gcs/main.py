@@ -16,8 +16,8 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
     # The ID of your GCS object
     # destination_blob_name = "storage-object-name"
 
-    # keyfile = 'gcs-deb4-day3-key.json'
-    keyfile = os.environ.get("KEYFILE_PATH")
+    keyfile = 'gcs-deb4-day3-key.json'
+    # keyfile = os.environ.get("KEYFILE_PATH")
 
     service_account_info = json.load(open(keyfile))
     credentials = service_account.Credentials.from_service_account_info(service_account_info)
